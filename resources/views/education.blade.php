@@ -37,7 +37,7 @@
         <div class="col-sm-18">
             <div class="card mt-3 p-3 ">
                  <h3>Add education</h3>
-                <form action="" method="POST">
+                <form action="/education/education_add" method="POST">
                 @csrf
                 <div class="form-group">
                     <label>Board</label>

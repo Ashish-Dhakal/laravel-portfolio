@@ -42,13 +42,19 @@
             <div class="col-sm-18">
                 <div class="card mt-3 p-3 ">
                     <h3>Add service</h3>
-                    <form action="" method="POST">
+                    <form action="/service/service_add" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
                             <label>Title</label>
-                            <input type="text" name="years" id=""><br><br>
+                            <input type="text" name="title" id=""><br>
+                            @if ($errors->has ('title'))
+                                <span class="text-danger">{{ $errors->first('title')}}</span>    <br>                            
+                            @endif
                             <label>Description</label>
-                            <input type="text" name="years" id=""><br><br>
+                            <input type="text" name="description" id=""><br>
+                            @if ($errors->has ('description'))
+                                <span class="text-danger">{{ $errors->first('description')}}</span> <br>                       
+                            @endif <br>
                             <button>Add</button>
                         </div>
                     </form>

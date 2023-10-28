@@ -42,13 +42,19 @@
             <div class="col-sm-18">
                 <div class="card mt-3 p-3 ">
                     <h3>Add portfolio</h3>
-                    <form action="" method="POST">
+                    <form action="/portfolio/portfolio_add" method="POST" enctype="multipart/form-data" >
                         @csrf
                         <div class="form-group">
                             <label> Project Image</label>
-                            <input type="file" name="" id=""><br><br>
+                            <input type="file" name="image" id=""><br>
+                            @if ($errors->has ('image'))
+                                <span class="text-danger">{{ $errors->first('image')}}</span>    <br>                            
+                            @endif
                             <label>Link sources of project</label>
-                            <input type="text" name="years" id=""><br><br>
+                            <input type="text" name="link" id=""><br>
+                            @if ($errors->has ('link'))
+                                <span class="text-danger">{{ $errors->first('link')}}</span>    <br>                            
+                            @endif <br>
                             <button>Add</button>
                         </div>
                     </form>

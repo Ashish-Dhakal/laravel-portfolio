@@ -38,13 +38,23 @@
         <div class="col-sm-18">
             <div class="card mt-3 p-3 ">
                  <h3>Add about</h3>
-                <form action="" method="POST">
+                <form action="about/about_add" method="POST">
                 @csrf
                 <div class="form-group">
+                    <label>About Me</label><br>
+                    <textarea name="aboutme" id="" cols="30" rows="10" style="width: 500px"> </textarea>
+                     @if ($errors->has ('aboutme'))
+                                <span class="text-danger">{{ $errors->first('aboutme')}}</span>    <br>                            
+                            @endif 
                     <label>Years Of experience</label>
-                    <input type="text" name="years" id=""><br> <br>
+                    <input type="text" name="Exp_Years" id=""><br>  @if ($errors->has ('Exp_Years'))
+                                <span class="text-danger">{{ $errors->first('Exp_Years')}}</span>    <br>                            
+                            @endif
                     <label>No of project complete</label>
-                    <input type="text" name="years" id=""><br> <br>
+                    <input type="text" name="Proj_Complete" id="">
+                    @if ($errors->has ('Proj_Complete'))
+                                <span class="text-danger">{{ $errors->first('Proj_Complete')}}</span>    <br>                            
+                            @endif<br> <br>
                     <button>Update</button>
                 </div>
             </form>
