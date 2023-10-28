@@ -59,7 +59,7 @@
 
             <div class="hero-button">
                 <a name="" id="" class="btn btn-primary" href="#Contact" role="button">Contact</a>
-                <a name="button-hero" id="" class="btn btn-primary" href="https://www.upwork.com/freelancers/~0190ef82bd42e4d819"
+                <a name="button-hero" id="" target=”_blank” class="btn btn-primary" href="https://www.upwork.com/freelancers/~0190ef82bd42e4d819"
                     role="button">Hire Me</a>
             </div>
 
@@ -111,7 +111,7 @@
     {{-- ------------------education section starts-------------------- --}}
 
     <section class="education container" id="Education">
-        <h2 class="section-header"><span>Education and Experience</span></h2>
+        <h2 class="section-header"><span>Education</span></h2>
         <div class="card-combo">
             <div class="edu-card">
                 <div class="year">2017</div>
@@ -153,15 +153,15 @@
     </div>
     
     <div class="box">
-        <a href="website/home.html"  target="_blank" ><img src="img/emall-image.png" alt=""> alt="" ></a> 
+        <a href="https://github.com/Ashish-Dhakal/Ecommerce"  target="_blank" ><img src="img/emall-image.png" alt=""> alt="" ></a> 
    </div>
 
     <div class="box">
-        <a href="https://github.com/Ashish-Dhakal/Ecommerce"> <img src="img/travel-web.jpg" alt=""> alt="" ></a>
+        <a href="https://github.com/Ashish-Dhakal/Ecommerce" target=”_blank”>  <img src="img/travel-web.jpg" alt=""> alt="" ></a>
     </div>
    
     <div class="box">
-        <a href="#"> <img src="img/websiteprj-ing.jpg" alt=""> </a>
+        <a href="" target=”_blank”> <img src="img/websiteprj-ing.jpg" alt=""> </a>
     </div>
 
 </div>
