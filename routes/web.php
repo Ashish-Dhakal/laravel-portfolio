@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\EducationController;
+use App\Http\Controllers\PortfolioUpdateController;
 
 /*
 |--------------------------------------------------------------------------
