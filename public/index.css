@@ -2,29 +2,24 @@
     font-family: "Inter", sans-serif;
     box-sizing: border-box;
 }
-body{
-    scrollbar-color:  rgb(10, 88, 202);
+body {
+    scrollbar-color: rgb(10, 88, 202);
 }
-
-
 
 /* width */
 ::-webkit-scrollbar {
-  width: 15px;
+    width: 15px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+    background: #f1f1f1;
 }
-
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(10, 88, 202);
-  border-radius: 5px;
+    background: rgb(10, 88, 202);
+    border-radius: 5px;
 }
-
-
 
 a {
     text-decoration: none;
@@ -352,4 +347,126 @@ textarea {
 /*----------------------------Contact section ends---------------------------*/
 
 /*--------------------------media query to make responsive--------------------*/
+
+@media (max-width: 1130px) and (min-width: 1000px) {
+    body {
+        background-color: red;
+    }
+    .dot-image-three img {
+        top: -80px;
+    }
+    .hero-info {
+        margin: -33px 0 20px 20px;
+    }
+    .nav-bar li a {
+        font-weight: 500;
+        color: black;
+        font-size: 15px;
+    }
+
+    .dot-image-two img {
+        position: relative;
+        height: 60px;
+        right: 505px;
+        top: 379px;
+    }
+
+    .about-box,
+    .box-one .box-two {
+        gap: 69px;
+    }
+
+    .service-box {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .service-box .service-content {
+        height: 300px;
+        width: 230px;
+    }
+
+    .contact-box {
+        padding: 0 155px;
+    }
+    .contact-box .personal-info .address-info li {
+        font-size: 20px;
+    }
+    .contact-box .contact-form input,
+    textarea {
+        padding: 10px;
+        width: 290px;
+    }
+}/*
+@media (max-width: 768px) {
+    .nav-header {
+        height: 80px;
+        width: 936px;
+    }
+    .nav-header .hero-name {
+        padding-left: 60px;
+        font-weight: 500;
+        font-size: 17px;
+    }
+    .nav-bar li {
+        font-size: 17px;
+    }
+    .dot-image-three img {
+        height: 45px;
+        left: 116px;
+        top: -42px;
+    }
+    .hero-info {
+        margin: 20px 0 20px 20px;
+        width: 561px;
+        height: 500px;
+        padding: 78px 40px 20px 30px;
+        font-size: 19px;
+    }
+    .dot-image-two img {
+        display: none;
+    }
+    .hero-image img {
+        height: 408px;
+        right: -116px;
+        bottom: 81px;
+    }
+    .dot-image-one img {
+        position: relative;
+        height: 45px;
+        right: -38px;
+        top: 55px;
+    }
+    .about-section {
+        height: 450px;
+        width: 960px;
+        margin: 9px 0;
+    }
+    .education {
+        width: 1036px;
+    }
+    .edu-card .level {
+        font-size: 20px;
+        font-weight: 500;
+    }
+} */
+
+
+/* Styles for screens less than 600 pixels (mobile) */
+@media only screen and (max-width: 599px) {
+  /* Your styles for mobile devices go here */
+}
+
+/* Styles for screens between 600 and 1023 pixels (tablet) */
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  /* Your styles for tablets go here */
+}
+
+/* Styles for screens between 1024 and 1439 pixels (laptop) */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  /* Your styles for laptops go here */
+}
+
+
+
+
 /*--------------------------media query to make responsive--------------------*/
