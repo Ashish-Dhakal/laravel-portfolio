@@ -30,25 +30,25 @@ li {
 .container {
     max-width: 1320px;
 }
-.nav-header {
+/* .nav-header {
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
     z-index: 10000;
     padding-top: 26px;
-    /* background-color: aqua; */
     display: flex;
     height: 80px;
     width: auto;
     background-color: white;
-}
-.nav-header .hero-name {
+} */
+
+/* .nav-header .hero-name {
     padding-left: 60px;
     font-weight: 500;
     font-size: 25px;
-}
-.nav-bar ul {
+} */
+/* .nav-bar ul {
     align-items: center;
     display: flex;
     padding-left: 60px;
@@ -72,6 +72,32 @@ li {
     cursor: pointer;
     color: var(--black);
     display: none;
+} */
+.navbar-brand{
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 25px;
+}
+.navbar-nav{
+}
+.navbar-collapse{
+    /* float: right; */
+        padding-left: 55px;
+        font-size: 20px;
+
+
+}
+.navbar-collapse ul>li{
+    /* float: right; */
+       padding-right: 50px;
+
+}
+
+.navbar-collapse a:hover{
+    color: rgb(10, 88, 202);
+    
+    /* border-bottom: 4px solid rgb(10, 88, 202);
+    border-radius: 3px; */
 }
 
 /*------------------------------ hero section------------------ */
@@ -454,6 +480,7 @@ textarea {
 /* Styles for screens less than 600 pixels (mobile) */
 @media only screen and (max-width: 599px) {
   /* Your styles for mobile devices go here */
+ 
 }
 
 /* Styles for screens between 600 and 1023 pixels (tablet) */
