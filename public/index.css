@@ -2,24 +2,29 @@
     font-family: "Inter", sans-serif;
     box-sizing: border-box;
 }
-body {
-    scrollbar-color: rgb(10, 88, 202);
+body{
+    scrollbar-color:  rgb(10, 88, 202);
 }
+
+
 
 /* width */
 ::-webkit-scrollbar {
-    width: 15px;
+  width: 15px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+  background: #f1f1f1;
 }
 
+
 ::-webkit-scrollbar-thumb {
-    background: rgb(10, 88, 202);
-    border-radius: 5px;
+  background: rgb(10, 88, 202);
+  border-radius: 5px;
 }
+
+
 
 a {
     text-decoration: none;
@@ -480,7 +485,6 @@ textarea {
 /* Styles for screens less than 600 pixels (mobile) */
 @media only screen and (max-width: 599px) {
   /* Your styles for mobile devices go here */
- 
 }
 
 /* Styles for screens between 600 and 1023 pixels (tablet) */
